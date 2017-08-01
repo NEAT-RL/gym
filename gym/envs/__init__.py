@@ -83,6 +83,7 @@ register(
     entry_point='gym.envs.classic_control:Continuous_MountainCarEnv',
     max_episode_steps=999,
     reward_threshold=90.0,
+    tags={'wrapper_config.TimeLimit.max_episode_steps': 999}
 )
 
 register(
