@@ -121,6 +121,26 @@ Barto, Sutton, and Anderson [Barto83]_.
 )
 
 add_task(
+    id='AdaptedCartPole-v0',
+    group='classic_control',
+    summary="Balance a pole on a cart.",
+    description="""\
+    A dynamical system with two degrees of freedom consisting of a cart that moves horizontally on a frictionless surface, and a pole of uniform density attached by an un-actuated joint to the cart.
+The system is controlled by applying a horizontal force of +1 or -1 to the cart.
+The pole starts upright, and the goal is to prevent it from falling over.
+A reward of +1 is provided for every timestep that the pole remains upright.
+The episode ends when the pole is more than 15 degrees from vertical, or the
+cart moves more than 2.4 units from the center.
+""",
+    background="""\
+This environment corresponds to the version of the cart-pole problem described by
+Barto, Sutton, and Anderson [Barto83]_.
+
+.. [Barto83] AG Barto, RS Sutton and CW Anderson, "Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problem", IEEE Transactions on Systems, Man, and Cybernetics, 1983.
+""",
+)
+
+add_task(
     id='Acrobot-v1',
     group='classic_control',
     summary="Swing up a two-link robot.",
