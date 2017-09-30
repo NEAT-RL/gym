@@ -53,7 +53,7 @@ class MountainCarEnv(gym.Env):
         return np.array(self.state), reward, done, {}
 
     def _reset(self):
-        self.state = np.array([self.np_random.uniform(low=-0.6, high=-0.4), 0])
+        self.state = np.array([self.np_random.uniform(low=-0.6, high=0.1), 0])
         return np.array(self.state)
 
     def _height(self, xs):
